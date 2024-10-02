@@ -6,8 +6,9 @@
         class="my-span"
         v-for="(tanulo, index) in TanulokSzakkorben"
         :key="tanulo.id"
-        >
-        {{ tanulo.nev }} <span v-if="index < TanulokSzakkorben.lenght - 1"></span>
+      >
+        {{ tanulo.nev }}
+        <span v-if="index < TanulokSzakkorben.length - 1"></span>
       </span>
     </div>
   </div>

@@ -6,7 +6,7 @@
           <tr>
             <th class="th-decor" scope="col">Név</th>
             <th class="th-decor" scope="col">Osztály</th>
-            <th class="th-decor" scope="col">szakkör</th>
+            <th class="th-decor" scope="col">Szakkör</th>
           </tr>
         </thead>
         <tbody>
@@ -16,12 +16,12 @@
             <td class="td-decor">
               <select
                 class="form-select"
-                aria-label="Default select explame"
+                aria-label="Default select example"
                 v-model="tanulo.szakkor"
               >
                 <option
-                  v-for="(szakkor, i) in szakkorok"
-                  :key="i"
+                  v-for="szakkor in szakkorok"
+                  :key="szakkor.id"
                   :value="szakkor.id"
                 >
                   {{ szakkor.neve }}
@@ -45,6 +45,7 @@
 
 <script>
 import SzakkorokKartya from "@/components/SzakkorokKartya.vue";
+
 export default {
   components: { SzakkorokKartya },
   data() {
@@ -62,30 +63,12 @@ export default {
         { id: 10, nev: "Molnár Krisztán", osztaly: "1E", szakkor: 1 },
       ],
       szakkorok: [
-        {
-          id: 1,
-          neve: "Nincs szakkörben",
-        },
-        {
-          id: 2,
-          neve: "Tánc",
-        },
-        {
-          id: 3,
-          neve: "Zene",
-        },
-        {
-          id: 4,
-          neve: "Történelem",
-        },
-        {
-          id: 5,
-          neve: "Röpi",
-        },
+        { id: 1, neve: "Nincs szakkörben" },
+        { id: 2, neve: "Tánc" },
+        { id: 3, neve: "Zene" },
+        { id: 4, neve: "Történelem" },
+        { id: 5, neve: "Röpi" },
       ],
-      components: {
-        SzakkorokKartya,
-      },
     };
   },
 };
