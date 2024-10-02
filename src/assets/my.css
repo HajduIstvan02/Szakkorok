@@ -1,0 +1,21 @@
+.my-container {
+  max-width: 1200px;
+}
+
+.my-border {
+  border: 1px dashed black;
+}
+
+.my-cursor-pointer {
+  cursor: pointer;
+}
+.th-decor{
+  text-decoration: underline;
+  background-color: hotpink;
+  
+}
+.td-decor{
+  background-color: hotpink;
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 217, 255);
+}
