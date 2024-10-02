@@ -59,7 +59,7 @@ export default {
         { id: 7, nev: "Pri Dávid", osztaly: "1D", szakkor: 1 },
         { id: 8, nev: "Bodó Atilla", osztaly: "1D", szakkor: 1 },
         { id: 9, nev: "Szűcs Szabi", osztaly: "1E", szakkor: 1 },
-        { id: 10, nev: "Fodor Armando Szabolcs", osztaly: "1E", szakkor: 1 },
+        { id: 10, nev: "Molnár Krisztán", osztaly: "1E", szakkor: 1 },
       ],
       szakkorok: [
         {
