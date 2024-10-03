@@ -2,7 +2,7 @@
   <div class="row card my-card bg-danger card-border-dark col-6"
   v-if="TanulokSzakkorben.length > 0">
     <div class="card-header">{{ szakkor.neve }}</div>
-    <div class="card-body text-dark text-red mp-2">
+    <div class="card-body text-dark mp-2">
       <span
         class="my-span"
         v-for="(tanulo, index) in TanulokSzakkorben"
