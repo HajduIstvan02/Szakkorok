@@ -45,7 +45,6 @@
 
 <script>
 import SzakkorokKartya from "@/components/SzakkorokKartya.vue";
-
 export default {
   components: { SzakkorokKartya },
   data() {

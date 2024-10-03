@@ -5,7 +5,7 @@
       <span
         class="my-span"
         v-for="(tanulo, index) in TanulokSzakkorben"
-        :key="tanulo.id"
+        :key="index"
       >
         {{ tanulo.nev }}
         <span v-if="index < TanulokSzakkorben.length - 1">, </span>
@@ -16,11 +16,11 @@
 
 <script>
 export default {
-  props: ["szakkor", "tanulok"], // "tanulo" -> "tanulok"
+  props: ["szakkor", "tanulok"],
   computed: {
     TanulokSzakkorben() {
       return this.tanulok
-        .filter((t) => t.tanulo == this.szakkor.id)
+        .filter((t) => t.szakkor == this.szakkor.id)
         .sort((a, b) => a.nev.localeCompare(b.nev));
     },
   },
