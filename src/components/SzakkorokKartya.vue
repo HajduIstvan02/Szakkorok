@@ -1,6 +1,6 @@
 <template>
-  <div class="card my-card bg-dark text-red card-border-dark">
-    <div class="card-header"></div>
+  <div class="row card my-card bg-danger card-border-dark">
+    <div class="card-header">{{ szakkor.neve }}</div>
     <div class="card-body text-dark text-red mp-2">
       <span
         class="my-span"
@@ -8,7 +8,7 @@
         :key="tanulo.id"
       >
         {{ tanulo.nev }}
-        <span v-if="index < TanulokSzakkorben.length - 1"></span>
+        <span v-if="index < TanulokSzakkorben.length - 1">, </span>
       </span>
     </div>
   </div>
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  props: ["szakkor", "tanulo"],
+  props: ["szakkor", "tanulok"], // "tanulo" -> "tanulok"
   computed: {
     TanulokSzakkorben() {
       return this.tanulok
